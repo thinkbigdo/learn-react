@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/react@15/dist/react.js"></script>
+        <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+    </head>
+    <body>
+        <div id="app">
+        </div>
+        <script>
+            var Employees = React.createClass({
+                render: function() {
+                    var employeesDom = this.props.employees.map(
+                        function (employee) {
+                            return React.createElement(
+                                Employee,
+                                {
+                                    key: employee.id,
+                                    name: employee.name,
+                                    title: employee.title
+                                },
+                                null
+                            )
+                        });
+                    return React.createElement(
+                        'ul',
+                        {},
+                        employeesDom
+                    );
+                }
+            });
+
+            var Employee = React.createClass({
+                render: function() {
+                    return React.createElement(
+                        'li',
+                        {},
+                        this.props.name + ', ' + this.props.title
+                    )
+                }
+            });
+
+            var EmployeeAdd = React.createClass({
+                render: function() {
+                    return React.createElement(
+                        'div',
+                        {},
+                        React.createElement(
+                            'button',
+                            { onClick: this.props.addNewEmployee },
+                            'Add New Random Employee'
+                        )
+                    )
+                }
+            });
+
+            var App = React.createClass({
+                getInitialState: function() {
+                    return { employeesList: this.props.employeesList };
+                },
+                addNewEmployee: function() {
+                    this.setState({ employeesList: this.state.employeesList.concat([{ id: this.state.employeesList.length + 1, name: 'My Employee Name', title: 'My Employee Title' }]) })
+                },
+                render: function () {
+                    return React.createElement(
+                        'div',
+                        {},
+                        React.createElement(
+                            Employees,
+                            { employees: this.state.employeesList },
+                            null
+                        ),
+                        React.createElement(
+                            EmployeeAdd,
+                            { addNewEmployee: this.addNewEmployee },
+                            null
+                        )
+                    )
+                }
+            });
+
+            var employeesList = [
+                { id: 1, name: 'James Spader', title: 'Actor' },
+                { id: 2, name: 'Jack Hernandez', title: 'Engineer' }
+            ]
+
+            ReactDOM.render(
+                React.createElement(App, { employeesList: employeesList }),
+                document.getElementById('app')
+            );
+        </script>
+    </body>
+</html>

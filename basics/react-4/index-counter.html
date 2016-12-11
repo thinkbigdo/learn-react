@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/react@15/dist/react.js"></script>
+        <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+    </head>
+    <body>
+        <div id="app">
+        </div>
+        <script>
+var Count = React.createClass({
+    render: function() {
+        return React.createElement(
+            'span',
+            {},
+            this.props.count
+        )
+    }
+});
+
+var Increment = React.createClass({
+    render: function() {
+        return React.createElement(
+            'div',
+            {},
+            React.createElement(
+                'button',
+                {
+                    onClick: this.props.increment
+                },
+                'Increment by 1'
+            )
+        )
+    }
+});
+
+
+// Counter -> this.props.count
+// Increment -> this.props.increment
+
+var App = React.createClass({
+    getInitialState: function() {
+        return { count: 0 };
+    },
+    increment: function() {
+        console.log('increment called')
+        this.setState({
+            count: this.state.count + 1
+        })
+    },
+    render: function () {
+        return React.createElement(
+            'div',
+            {},
+            React.createElement(
+                Count,
+                { count: this.state.count },
+                null
+            ),
+            React.createElement(
+                Increment,
+                { increment: this.increment },
+                null
+            )
+        )
+    }
+});
+
+/*
+    <App>
+        <Count></Count>
+        <Increment></Increment>
+    </App>
+
+    <div>
+        <span>{this.props.count}</span>
+        <div>
+            <button onClick={this.props.increment}>Increment by 1</button>
+        </div>
+    </div>
+*/
+
+ReactDOM.render(
+    React.createElement(App),
+    document.getElementById('app') // Mount point
+);
+        </script>
+    </body>
+</html>

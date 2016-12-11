@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/react@15/dist/react.js"></script>
+        <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+    </head>
+    <body>
+        <div id="app">
+        </div>
+        <script>
+            var element = React.createElement(
+                'div',
+                {},
+                [
+                    'Hello World This is neat! ',
+                    React.createElement(
+                        'a',
+                        { href: '/more-info' },
+                        'Click here for more info!'
+                    )
+                ]
+            );
+            ReactDOM.render(
+                element,
+                document.getElementById('app')
+            );
+        </script>
+    </body>
+</html>
