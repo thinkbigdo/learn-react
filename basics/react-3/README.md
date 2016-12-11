@@ -6,6 +6,9 @@ The prereqs are at least 1 year experience with HTML, Javascript, nodejs.
 
 ## Component function -> component class (ES5)
 
+
+The pure Javascript function as a component:
+
     function Employees() {
         return React.createElement(
             'ul',
@@ -15,6 +18,8 @@ The prereqs are at least 1 year experience with HTML, Javascript, nodejs.
     }
 
     // React.createElement(Employee)
+
+The createClass way of creating a component:
 
     var Employees = React.createClass({
         // Other goodness...
@@ -26,6 +31,8 @@ The prereqs are at least 1 year experience with HTML, Javascript, nodejs.
             );
         }
     });
+
+Both of the above produce the same output.
 
     ReactDOMServer.renderToString(
         React.createElement(
