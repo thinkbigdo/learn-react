@@ -18,5 +18,7 @@ Will generate:
 
 ## Examples / Exercises
 
-- React in nodejs
-- React in the browser
+- React in nodejs: Run index.js
+- React in the browser: Run index.html
+
+Both of these files are contained in this folder.
