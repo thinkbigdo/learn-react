@@ -8,7 +8,9 @@
         'A demo app'
     )
 
--- > <a href="/demo">A demo app</a>
+Will generate:
+
+    <a href="/demo">A demo app</a>
 
 ## Examples / Exercises
 
