@@ -2,14 +2,15 @@
 
 ## React.createElement()
 
-React.createElement(
-    'a',
-    {href: '/demo'},
-    'A demo app'
-)
+    React.createElement(
+        'a',
+        {href: '/demo'},
+        'A demo app'
+    )
 
 -- > <a href="/demo">A demo app</a>
 
-## React in nodejs
+## Examples / Exercises
 
-## React in the browser
+- React in nodejs
+- React in the browser
