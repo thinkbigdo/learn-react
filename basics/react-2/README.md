@@ -22,7 +22,7 @@ The prereqs are at least 1 year experience with HTML, Javascript, nodejs.
 
 Will generate:
 
-    <h1>Hello, React Guru</h1>
+    <h1>Welcome, React Guru</h1>
 
 ## Examples / Exercises
 
