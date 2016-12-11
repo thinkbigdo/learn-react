@@ -1,11 +1,10 @@
 ## Overview
 
-This exercise has a video.
+This exercise has a video. https://youtu.be/HeUPpF1T-R0
 
 The prereqs are at least 1 year experience with HTML, Javascript, nodejs.
 
 ## Component function -> component class (ES5)
-
 
 The pure Javascript function as a component:
 
