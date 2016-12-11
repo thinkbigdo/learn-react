@@ -14,7 +14,7 @@ function Welcome(props) {
 
 var element = React.createElement(
     Welcome, // 'div'
-    {name: 'React ++'},
+    {name: 'React Guru'},
     null
 )
 // <h1>Hello, React Guru</h1>
