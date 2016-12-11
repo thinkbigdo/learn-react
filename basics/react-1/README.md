@@ -1,4 +1,8 @@
-## Prereqs: HTML, Javascript, nodejs.
+## Overview
+
+This exercise has a video.
+
+The prereqs are at least 1 year experience with HTML, Javascript, nodejs.
 
 ## React.createElement()
 
