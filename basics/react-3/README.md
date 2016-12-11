@@ -35,13 +35,13 @@ The prereqs are at least 1 year experience with HTML, Javascript, nodejs.
 
 ## What's the point?
 
-Component as a pure function.
-Component as a React class.
+We now have:
 
--- Pure function is simple and easy. It takes
-only the props argument.
+- Component as a pure function.
+- Component as a React class.
 
--- React class takes at /minimum/ an object
-literal with a property that is a function.
-This paves the way for further functionality
-that we will discuss in the next sections.
+Which leads us to:
+
+#### Pure function is simple and easy. It takes only the props argument.
+
+#### React class takes at /minimum/ an object literal with a property that is a function. This paves the way for further functionality that we will discuss in the next sections.
