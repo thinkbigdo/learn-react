@@ -1,35 +1,37 @@
-## Prereqs: HTML, Javascript, nodejs.
+## Overview
+
+This exercise has a video.
+
+The prereqs are at least 1 year experience with HTML, Javascript, nodejs.
 
 ## Component function -> component class (ES5)
 
-function Employees() {
-    return React.createElement(
-        'ul',
-        {},
-        null
-    );
-}
-
-// React.createElement(Employee)
-
-var Employees = React.createClass({
-    // Other goodness...
-    render: function() {
+    function Employees() {
         return React.createElement(
             'ul',
             {},
             null
         );
     }
-});
 
-ReactDOMServer.renderToString(
-    React.createElement(
-        Employees
-    )
-);
+    // React.createElement(Employee)
 
-## React in nodejs <--- Not for state management.
+    var Employees = React.createClass({
+        // Other goodness...
+        render: function() {
+            return React.createElement(
+                'ul',
+                {},
+                null
+            );
+        }
+    });
+
+    ReactDOMServer.renderToString(
+        React.createElement(
+            Employees
+        )
+    );
 
 ## What's the point?
 
