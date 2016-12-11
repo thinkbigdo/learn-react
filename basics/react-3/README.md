@@ -44,4 +44,4 @@ Which leads us to:
 
 #### Pure function is simple and easy. It takes only the props argument.
 
-#### React class takes at /minimum/ an object literal with a property that is a function. This paves the way for further functionality that we will discuss in the next sections.
+#### React class takes at /minimum/ an object literal with a "render" property that is a function. This paves the way for further functionality that we will discuss in the next sections.
