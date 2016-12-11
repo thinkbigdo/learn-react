@@ -49,5 +49,5 @@ Well, we can:
 
 ## Reference
 
-https://github.com/babel/babel-standalone#usage
+https://github.com/babel/babel-standalone#usage  
 https://babeljs.io/docs/plugins/preset-react/
