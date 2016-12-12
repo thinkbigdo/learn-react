@@ -12,4 +12,9 @@ As you watch the video, please follow along. The course contains the same conten
 
 ## The Course Sections/Lessons
 
-[Lesson #1](react-1/)
+[Lesson #1](react-1/) - React.createElement()
+[Lesson #2](react-2/) - Components
+[Lesson #3](react-3/) - React.createClass()
+[Lesson #4](react-4/) - Stateful component
+[Lesson #5](react-5/) - JSX
+[Lesson #6](react-6/) - JSX and Babel flow
