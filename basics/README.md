@@ -12,4 +12,4 @@ As you watch the video, please follow along. The course contains the same conten
 
 ## The Course Sections/Lessons
 
-[/react-1/](Lesson #1)
+[Lesson #1](/react-1/)
