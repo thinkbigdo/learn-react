@@ -1,6 +1,6 @@
 ## Overview
 
-This exercise has a video:
+This exercise has a video:Your video was uploaded. https://youtu.be/KweYlFFq3NU
 
 The prereqs are at least 1 year experience with HTML, Javascript, nodejs.
 
